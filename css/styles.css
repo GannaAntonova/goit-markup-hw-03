@@ -15,7 +15,7 @@ body {
 
 .header {
   color: var(--page-background-color);
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo-part-one {
@@ -72,12 +72,22 @@ body {
 
 .contact-info .link {
   color: hsl(0, 0%, 13%);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
   text-decoration: none;
 }
 .contact-info .link:hover,
 .contact-info .link:focus {
   color: #2196f3;
   text-decoration: none;
+}
+
+.main-nav,
+.nav,
+.site-nav,
+.contact-info {
+  display: flex;
 }
 
 .hero {
@@ -154,19 +164,20 @@ body {
   line-height: 1.87;
 }
 
-.address-info {
+.footer .contact-info {
   color: var(--footer-text-color);
-  font-size: 400;
-  font-weight: 14px;
+  background-color: var(--footer-section-color);
+  font-weight: 400;
+  font-size: 14px;
   line-height: 1.71;
   font-style: normal;
 }
 
-.footer {
-  background-color: var(--footer-section-color);
-}
 .footer-link {
   color: var(--footer-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
   text-decoration: none;
 }
 .footer-link:hover,
@@ -182,8 +193,53 @@ body {
   margin: 0 auto;
   background-color: var(--page-background-color);
 }
+.footer-container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  background-color: var(--footer-section-color);
+  color: var(--footer-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  text-decoration: none;
+}
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+h1 {
+  margin: 0;
+}
+h2 {
+  margin: 0;
+}
+h3 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+}
+img {
+  display: block;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0000);
+  overflow: hidden;
+}
+
+.photo-caption {
+  border-top: 0px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
