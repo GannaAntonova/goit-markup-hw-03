@@ -291,7 +291,6 @@ a {
 .photo-caption {
   border: 1px solid #eeeeee;
   border-top: 0px;
-  height: 110px;
   padding: 20px 24px;
 }
 .footer {
@@ -300,6 +299,8 @@ a {
   font-weight: 400;
   line-height: 1.71;
   font-style: normal;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-address-info {
   color: var(--footer-text-color);
@@ -314,19 +315,17 @@ a {
 .footer .footer-link:focus {
   color: var(--accent-color);
 }
-.footer-click {
+.footer-click-two {
   margin-top: 9px;
   letter-spacing: 0.03em;
 }
-.footer-logo {
-  padding-top: 60px;
-  margin-bottom: 20px;
-  letter-spacing: 0.03em;
-}
 .address {
-  padding-bottom: 60px;
+  margin-top: 20px;
 }
 
+.footer-list {
+  margin-top: 9px;
+}
 h1,
 h2,
 h3,
@@ -420,10 +419,14 @@ img {
 }
 .button-nav {
   justify-content: center;
+  margin-bottom: 50px;
 }
 .portfolio {
   padding: 6px 22px;
-  margin-left: 4px;
-  margin-right: 4px;
-  margin-bottom: 50px;
+}
+.button-nav-item {
+  margin-right: 8px;
+}
+.button-nav-item:last-child {
+  margin-right: 0;
 }
